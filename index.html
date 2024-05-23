@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Navigation Bar</title>
+  <link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="#" onclick="showPage('introduction')">Introduction</a></li>
+      <li><a href="#" onclick="showPage('dream car')">Dream Car</a></li>
+      <li><a href="#" onclick="showPage('dream classic car')">Dream Classic Car</a></li>
+      <li><a href="#" onclick="showPage('dream daily')">Dream Daily</a></li>
+      <li><a href="#" onclick="showPage('car form')">Car Form</a></li>
+    </ul>
+  </nav>
+
+  <div class="page-content">
+    <div id="introduction" style="display: block;">
+      <h2>INTODUCTION</h2>
+      <p>My favorite cars are more than just machines; they're like friends on wheels, each with its own unique charm and story to tell. From the classic beauties that exude timeless elegance to the modern marvels packed with cutting-edge technology, they never fail to spark my imagination and fuel my passion for all things automotive. With every turn of the key, they invite me on adventures filled with excitement and discovery, making every journey behind the wheel an unforgettable experience. These cars aren't just about getting from point A to point B; they're about the thrill of the ride and the memories made along the way, reminding me that sometimes, the best journeys are the ones taken with the ones you love – even if they're made of metal and rubber.</p>
+      <h2>Cars that I am going to right about</h2>
+      <uL>
+        <li>Koenigsegg Agera Absolut</li>
+        <li>Pagani Zonda</li>
+        <li>Ferrari F40</li>
+        <li>Audi RS6</li>
+        <li>Kia Stinger</li>
+      </ul>
+      <table>
+       <tr>  
+        <th>Car</th>
+        <th>Company that made that car</th>
+        <th>0/60</th>
+      </tr>
+      <tr>
+        <td>Agera Absolut</td>
+        <td>Koenigsegg</td>
+        <td>2.5 seconds</td>
+      </tr>
+      <tr>
+        <td>Zonda</td>
+        <td>Pagani</td>
+        <td>3.3 seconds</td>
+      </tr>
+      <tr>
+        <td>F40</td>
+        <td>Ferrari</td>
+        <td>3.8 seconds</td>
+      </tr>
+      <tr>
+        <td>RS6</td>
+        <td>Audi</td>
+        <td>3.3 seconds</td>
+      </tr>
+      <tr>
+        <td>Stinger</td>
+        <td>Kia</td>
+        <td>4.6 seconds</td>
+      </tr>
+      </table>
+      
+    </div>
+    
+    <div id="dream car" style="display: none;">
+      <h2>DREAM CAR</h2>
+      <p>LMy dream car is a stunning combination of the best features from two incredible machines: the sleek lines and unmatched speed of the Koenigsegg Agera Absolut merge seamlessly with the timeless elegance and luxury of the Pagani Zonda. It's the ultimate expression of automotive perfection, capturing attention with its unparalleled performance and captivating design. Every curve tells a story of innovation and precision, igniting my imagination and fueling my passion for the open road. With the Koenigsegg Agera Absolut of Pagani Zonda as my dream car, the thrill of the drive knows no bounds, promising an experience beyond compare.</p>
+      <p style="text-align:center"><img src= "https://codehs.com/uploads/e379ac49ea5596c3bdcf2dc3a89df162"
+      width= "590px">
+      <p style="text-align:center"><img src= "https://codehs.com/uploads/5accff093fbb3143014faee1d75a5854"
+      width= "590px">
+    </div>
+    
+    <div id="dream classic car" style="display: none;">
+      <h2>DREAM CLASSIC CAR</h2>
+      <p>The Ferrari F40, an absolute classic, holds the top spot in my heart when it comes to vintage cars. Its sleek lines and powerful engine make it a legend on the road. From its roaring engine to its iconic red paint, every detail of the F40 is a masterpiece. Driving it would be a dream come true, feeling the wind rush by as I cruise in this timeless beauty, experiencing the thrill of a true automotive icon.</p>
+      <p style="text-align:center"><img src= "https://codehs.com/uploads/9a830c13b99044fc33e558c5caf047d5"
+      width= "590px"> 
+    </div>
+    
+    <div id="dream daily" style="display: none;">
+      <h2>DREAM DAILY</h2>
+      <p>GWhen it comes to my ideal everyday car, I'm torn between the Audi RS6 and the Kia Stinger. The Audi RS6, with its sleek design and powerful engine, promises an exhilarating ride every time I hit the road. On the other hand, the Kia Stinger offers a perfect balance of comfort and performance, making it a reliable companion for my daily commute. Whether it's the luxurious feel of the Audi or the sporty vibe of the Kia, both cars embody my vision of the perfect daily driver, ready to take on any adventure life throws my way.</p>
+      <p style="text-align:center"><img src= "https://codehs.com/uploads/ac50a704ec63daeef519894ad0f40804"
+      width= "590px">
+      <p style="text-align:center"><img src= "https://codehs.com/uploads/9a059f3bae8356d369c6dce139841739" alt= "Picture of Puppies"
+      width= "590px">
+    </div> 
+     
+    <div id="car form" style="display: none;">
+      <h2>Car Form</h2>
+      <form name="myForm" method="get" id="myForm">
+        <label for="name">What is your favorite car : </label>
+        <input type="text" id="name" name="name">
+        <p></p>
+        <label for="travel">Favorite Color :</label>
+        <select id="travel" name="travel">
+          <option value="Blue">Blue</option>
+          <option value="Green">Green</option>
+          <option value="Yellow">Yellow</option>
+          <option value="White">White</option>
+          <option value="Black">Black</option>
+          <option value="Red">Red</option>
+        </select><br>
+        <p></p>
+        <label for="place"> Where would you like to drive that car :</label>
+        <textarea id="place" name="place"></textarea>
+        <p></p>
+        <label for="adj1">What is your car brand : </label>
+        <input type="text" id="adj1" name="adj1">
+        <p></p>
+        <input type="submit" value="Show the story">
+      </form>
+      <!--This is where story will go between the div-->
+      <div id="formContents"></div>
+    </div>
+  </div>
+
+  <script>
+    function showPage(page) {
+      const pages = document.getElementsByClassName('page-content')[0].children;
+      for (let i = 0; i < pages.length; i++) {
+        pages[i].style.display = 'none';
+      }
+      document.getElementById(page).style.display = 'block';
+    }
+     
+    var form = document.getElementById("myForm");
+    
+    form.addEventListener("submit", function(event){
+      event.preventDefault();
+      var name = document.getElementById("name").value;
+      var adj1 = document.getElementById("adj1").value; 
+      var travel = document.getElementById("travel").value; 
+      var place = document.getElementById("place").value; 
+      //Get the location to place the story
+      var putStory = document.getElementById("formContents");
+      
+
+      putStory.innerHTML =" My favorite car is a  "  + travel + ","  + name + " " + "that I would love to drive to " + place + " coastal roads of " + adj1 + "." ;
+    });
+  </script>
+
+  <video autoplay muted loop id="myVideo">
+    <source src="https://codehs.com/uploads/43751f754dd0126bf1aa0849269dbc1f" type="video/mp4"> 
+  </video>
+
+</body>
+</html>
